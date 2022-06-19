@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+}
+.top-container {
+    background-color: hsl(193, 100%, 96%);
+}
+.top-bar {
+    display: flex;
+    height: 50px;
+    padding: 35px;
+}
+.logo {
+    flex-basis: 80%;
+    margin: 10px;
+}
+.logo img{
+    height: auto;
+    width: 150px;
+}
+.try-it {
+    flex-basis: 20%;
+}
+.try-it button {
+    width: 70%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+}
+
+.banner {
+    display: flex;
+    padding: 35px;
+}
+.banner .left {
+    flex-basis: 50%;
+    margin: 10% 0;
+}
+.banner .left button{
+    width: 200px;
+    padding: 15px;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 25px;
+    color: white;
+    border: none;
+}
+.banner .right {
+    flex-basis: 50%;
+    width: 50%;
+    padding: 20px;
+}
+.banner .right img {
+    width: 100%;
+}
+
+.card-container {
+    display: block;
+    /*height: 50px;*/
+    padding: 100px;
+    margin: 15px;
+    position: relative;
+}
+
+.card-container .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 15px;
+    display: flex;
+}
+.card-container .card .text-left {
+    flex-basis: 60%;
+}
+.card-container .card .img-right {
+    flex-basis: 40%;
+    width: 50%;
+    padding: 50px;
+}
+.card-container .card img {
+    /*padding: 30px;*/
+    width: 100%;
+    height: auto;
+}
+.card-container .card .text-right {
+    flex-basis: 60%;
+}
+.card-container .card .img-left {
+    flex-basis: 40%;
+    width: 50%;
+    padding: 50px;
+}
+
+.advert {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 200px;
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: -100px;
+    text-align: center;
+    width: 50%;
+    z-index: 10;
+}
+
+.footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 150px;
+}
+.sections {
+    display: flex;
+}
+.footer-logo {
+    background-color: white;
+    -webkit-mask: url(images/logo.svg) no-repeat;
+    mask: url(images/logo.svg) no-repeat;
+    height: 80px;
+}
+.one {
+    flex: 33.3%;
+}
+.two {
+    flex: 16.6%;
+}
+.three {
+    flex: 16.6%;
+}
+.four {
+    flex: 33.3%;
+}
+
+
+
+
+@media screen and (max-width: 1440px) {
+    .top-container {
+        background-image: url("images/bg-hero-desktop.svg");
+    }
+}
+@media screen and (max-width: 375px) {
+    .top-container {
+        background-image: url("images/bg-hero-mobile.svg");
+    }
+}
+
+.copyrigt {
+    color: white;
+    margin-bottom: 0;
+    background-color: hsl(192, 100%, 9%);
+    text-align: right;
+    padding: 50px;
+    /*right: 0;*/
+}
